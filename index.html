@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-<title>About Me</title>
+        <title>About Me</title>
+        <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
         <header>
@@ -18,9 +19,9 @@
             </nav>
 
 
-            <h1>About Me</h1>
-            <img src="https://media.licdn.com/dms/image/v2/D4E03AQH6Dp5e8DNtZQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1723806817619?e=2147483647&v=beta&t=e5bKrMhIK2OQtm0-7yBifHltps80EDtRWbykez1p8OI"/>
-            <h2>Welcome to this basic site, where I'm going to introduce myself to practise the <em>HTML</em> and <em>CSS</em> skills that I've learned</h2>
+            <h1 id="top">About Me</h1>
+            <a href="https://www.linkedin.com/in/shandonwilliams/" target="_blank"><img src="https://media.licdn.com/dms/image/v2/D4E03AQH6Dp5e8DNtZQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1723806817619?e=2147483647&v=beta&t=e5bKrMhIK2OQtm0-7yBifHltps80EDtRWbykez1p8OI"/></a>
+            <p><strong>Welcome to this basic site, where I'm going to introduce myself to practise the <em>HTML</em> and <em>CSS</em> skills that I've learned</strong></p>
         </header>
 
 
@@ -36,7 +37,7 @@
            
            
            
-           
+           <!--This section contains five quick facts about me, using ordered lists-->
            
             <section id="quick-facts">
                 <h2>Quick Facts</h2>
@@ -60,17 +61,25 @@
                 <p>Now I want to talk to you a bit about my <strong>family</strong>, who are very important to me.</p>
                 <p>My immediate family consists of my Mum, older sister and my two younger brothers.</p>
                 <h3>Mi madre</h3>
-                <p>My Mum is called Samantha and she's 46 years old. She loves reading <a href="https://en.wikipedia.org/wiki/James_Patterson" target="_blank">James Patterson</a> and other crime books, watching crime shows and drinking tea.</p>
-                <img src="mum-image.jpg" alt="This is my Mum"/>
+                <p class="family-bio">My Mum is called Samantha and she's 46 years old. She loves reading <a href="https://en.wikipedia.org/wiki/James_Patterson" target="_blank">James Patterson</a> and other crime books, watching crime shows and drinking tea.</p>
+                <figure class="fam">
+                    <img src="mum-image.jpg" alt="This is my Mum"/>
+                </figure>
                 <h3>Mi hermana mayor</h3>
-                <p>My older sister is called Shalada. She's 31 years old and lives in South Kensington. She likes sleeping, is training to be a beautician and loves dancing.</p>
-                <img src="sha-image.jpeg" alt="This is my sister"/>
+                <p class="family-bio">My older sister is called Shalada. She's 31 years old and lives in South Kensington. She likes sleeping, is training to be a beautician and loves dancing.</p>
+                <figure class="fam">
+                    <img src="sha-image.jpeg" alt="This is my sister"/>
+                </figure>
                 <h3>Mi primer hermano</h3>
-                <p>My oldest brother is called Shawn. He's 15 years old and is in Year 11. He loves anime, particularly Yugioh and <strong>Attack on Titan</strong>. He also loves playing computer. And he likes and is very good at drawing.</p>
-                <img src="shawn-image.jpg" alt=""This is my brother Shawn/>
+                <p class="family-bio">My oldest brother is called Shawn. He's 15 years old and is in Year 11. He loves anime, particularly Yugioh and <strong>Attack on Titan</strong>. He also loves playing computer. And he likes and is very good at drawing.</p>
+                <figure class="fam">
+                    <img src="shawn-image.jpg" alt=""This is my brother Shawn/>
+                </figure>
                 <h3>Mi hermano más joven</h3>
-                <p>Finally, my youngest brother, Shaye. He's 11 years old and is in Year 7. He enjoys baking and cooking, he loves watching films and TV shows (at the moment he's watching <a href="https://en.wikipedia.org/wiki/Young_Sheldon" target="_blank">Young Sheldon</a>) and he loves reading</p>
-                <img src="shaye-image.jpg" alt="This is my brother Shaye"/>
+                <p class="family-bio">Finally, my youngest brother, Shaye. He's 11 years old and is in Year 7. He enjoys baking and cooking, he loves watching films and TV shows (at the moment he's watching <a href="https://en.wikipedia.org/wiki/Young_Sheldon" target="_blank">Young Sheldon</a>) and he loves reading</p>
+                <figure class="fam">
+                    <img src="shaye-image.jpg" alt="This is my brother Shaye"/>
+                </figure>
             </section>
 
 
@@ -91,6 +100,8 @@
                             <th>Subjects studied</th>
                             <th>Grades</th>
                         </tr>
+                    </thead>
+                    <tbody>
                         <tr>
                             <td>Durham University</td>
                             <td rowspan="2">England</td>
@@ -101,14 +112,49 @@
                         <tr>
                             <td>City of London School</td>
                             <td>2008-2015</td>
-                            <td></td>
+                            <td>A Levels: Spanish, Mathematics, Economics, Chemistry</td>
+                            <td>4 A*</td>
                         </tr>
-                    </thead>
+                    </tbody>
                 </table>
             </section>
+
+            <!--Here I've practised adding locally hosted videos and audio files, as well as embedding files from YouTube and Apple Podcasts using iframes-->
+
+
+
+
+            <section id="Work">
+                <h2>My Work</h2>
+                <p>Finally, I want to speak about my work history briefly.</p>
+                <p>Over the past 3 years I've worked mostly in marketing for a couple of different companies, doing <strong>content marketing</strong>, particularly blog writing and social media content creation.</p>
+                <p>Before that, I started my own business called <a href="https://website.beacons.ai/letstalkspanish1" target="_blank">ESpeak Spanish</a>, where I taught adults to become confident Spanish speakers through one-on-one conversational Spanish lessons.</p>
+                <p>As part of this, I created lots of online content. This included lots of video content, a lot of which is on YouTube. Here's an example:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9lhx6g1IPYE?si=tCjr9IVSzew2-B1G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>And here's another video of me:</p>
+                <figure class="vid">
+                    <video controls loop src="espeak-video.mp4">Video Unavailable</video>
+                    <figcaption>Me speaking in Spanish (loop)</figcaption>
+                </figure>
+                <p>But I also created a podcast, Let's Talk Spanish, which has <em>180,000 downloads</em> and reached the <strong>top 5 in the UK for learning Spanish.</strong></p>
+                <p>Here's the most recent episode:</p>
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/gb/podcast/mi-amigo-perdi%C3%B3-el-vuelo-my-friend-missed-the-flight/id1482588696?i=1000666115274"></iframe>
+                <p>And here's another:</p>
+                    <audio controls>
+                        <source src="mas-comida-por-favor.mp3" type="audio/mp3">
+                    </audio>
+            </section>
         </main>
+
+
+
+        <p>That's all folks! Thanks for reading.</p>
     </body>
     <footer>
-
+        <ul>
+            <li><a href="https://github.com/Shandonwilliams" target="_blank">My GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/shandonwilliams/" target="_blank">My LinkedIn</a></li>
+            <li><a href="#top">Back to top</a></li>
+        </ul>
     </footer>
 </html>

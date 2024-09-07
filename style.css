@@ -1,0 +1,122 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:bisque;
+}
+
+
+figure img {
+    height: 400px;
+}
+
+nav li, footer li {
+    display: inline-block;
+    border: 2px solid burlywood;
+    font-weight: bold;
+    padding: 5px;
+    margin: 8px;
+}
+
+nav, footer {
+    background-image: url(https://wallpapers.com/images/hd/calm-pastel-ocean-o3kt7kiqd3x91tuz.jpg);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+h2 {
+    background-color: burlywood;
+    width: 200px;
+    font-size: 26px;
+    padding: 5px;
+    text-align: center;
+    margin: 40px auto 0;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+    background-color: chartreuse;
+    width: fit-content;
+}
+
+header {
+    text-align: center;
+}
+
+ol, ul {
+    list-style:square
+}
+
+a {
+    color:plum
+}
+
+
+a:hover {
+    color: blue;
+}
+
+nav {
+    position: fixed;
+    top: 0
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+}
+
+#education {
+    overflow: scroll;
+    height: 200px;
+}
+
+th, td {
+    border: 1px solid black
+}
+
+th {
+    background-color:blueviolet;
+    color: white
+}
+
+.family-bio {
+    width: 100px;
+}
+
+.family-bio, figure.fam {
+    display: inline-block;
+}
+
+iframe {
+    display: block;
+    margin: 50px auto;
+}
+
+audio {
+    width: 500px;
+    margin: 20px auto 5px;
+    display: block;
+}
+
+figcaption {
+    position: relative;
+    width: 500px;
+    margin: 10px auto;
+}
+
+figure.vid {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+
